@@ -1,3 +1,4 @@
+#Programa work in progress
 class NumBinario:
     def __init__(self,num):
         self.numero = list(num)
