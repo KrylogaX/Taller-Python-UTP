@@ -1,7 +1,7 @@
 def sing(b,end):
     print(b or 'no more',
-          'bottle'+('s' if b-1 else ''),
-          end)
+        'bottle'+('s' if b-1 else ''),
+        end)
 
 for i in range(99,0,-1):
     sing(i,' of beer on the wall,')

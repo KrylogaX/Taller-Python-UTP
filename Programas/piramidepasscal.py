@@ -6,12 +6,12 @@ def scan(op, seq, it):
     result = op(result, x)
     a.append(result)
   return a
- 
+
 def pascal(n):
     def nextrow(row, x):
         return [l+r for l,r in zip(row+[0,],[0,]+row)]
- 
+
     return scan(nextrow, range(n-1), [1,])
- 
+
 for row in pascal(20):
     print(row)
